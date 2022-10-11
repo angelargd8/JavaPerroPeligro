@@ -2,7 +2,7 @@ body{
     background-repeat: no-repeat ;
     background-size: cover;
     background-attachment: fixed;
-    /*background-color: rgb(37, 36, 64 );*/
+    background-color: rgb(37, 36, 64 );
     background-image: url(../img/wallpape4.jpg);
     font-family: 'Georgia', serif;
 }
