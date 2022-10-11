@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/estilo.css">
         <title>Menu Principal</title>
     
-        <script type="text/javascript" src="../modelo/pruebita.js">
+        <script type="text/javascript" src="../modelo/NuevaVentana.js">
             
             
 
@@ -71,33 +71,33 @@
         <h1 class="text-light" font="Arial">Bienvenido</h1>
         <div class="row justify-content-center pt-5 mt-5 mr-1">
             <div class="col-md-7 formulario">
-                <form action="abecedario.php" method="POST">
+                <form action="abecedario.html" method="POST">
                     
                     <div class="form-group text-center pt-4">
                         <h1 class="text-light" font="Helvetica">Abecedario</h1><br>
                     </div>  
                     <div class="form-group mx-sm-5 pb-3">
-                        <input type="button"  class="btn btn-block empezar" value="abecedario" id="click"><br>
+                        <input type="button"  class="btn btn-block empezar" value="abecedario" onclick="abc()"><br>
                     </div>
                     
                 </form>
-                <form action="saludos.php" method="POST">
+                <form action="saludos.html" method="POST">
                     
                     <div class="form-group text-center pt-4">
                         <h1 class="text-light" font="Helvetica"> Saludos</h1><br>
                     </div>  
                     <div class="form-group mx-sm-5 pb-3">
-                        <input type="submit" class="btn btn-block empezar" value="saludos"><br>
+                        <input type="button" class="btn btn-block empezar" value="saludos" onclick="salu2()"><br>
                     </div>
                     
                 </form>
-                <form action="frases.php" method="POST">
+                <form action="frases_comunes.html" method="POST">
                     
                     <div class="form-group text-center pt-4">
                         <h1 class="text-light" font="Helvetica"> Frases comunes</h1><br>
                     </div>  
                     <div class="form-group mx-sm-5 pb-3">
-                        <input type="submit" class="btn btn-block empezar" value="frases"><br>
+                        <input type="button" class="btn btn-block empezar" value="frases" onclick="frases()"><br>
                     </div>
                     
                 </form>
