@@ -1,0 +1,35 @@
+body{
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+    /*background-color: rgb(37, 36, 64 );*/
+    background-image: url(../img/wallpape4.jpg);
+    font-family: 'Georgia', serif;
+}
+
+.formulario{
+    /*background-color: rgb(58, 56, 99);*/
+    background-color: rgba(58, 56, 99, 0.823);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, -0, 0, -0.568);
+    color: white;
+    padding: 19px;
+}
+.form-control::placeholder{
+    color: rgba(0, 0, 0, 0.842);
+}
+
+
+.empezar {
+    background-color: rgb(130, 127, 175);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700!important;
+    box-shadow: 0 0 30px rgba(0, -0, 0, -0.568);
+    transition: 0.5s ease-in;
+}
+
+.empezar:hover{
+    color:rgb(0, 4, 255);
+}
