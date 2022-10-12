@@ -1,8 +1,4 @@
 
-//function init(){
-
-    
-//}
 
 
 class NuevaVentana{
@@ -23,6 +19,8 @@ class NuevaVentana{
     }
 
 }
+
+
 var nuevav = new NuevaVentana();
 
 function abc(){
@@ -43,5 +41,4 @@ b1.onclick= function(){
 } 
 document.getElementById("c").addEventListener('click', function(){
    p.hola(); 
-});*/
-    
+//});*///
