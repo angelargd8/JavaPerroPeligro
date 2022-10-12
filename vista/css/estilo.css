@@ -24,12 +24,14 @@ body{
 .empezar {
     background-color: rgb(130, 127, 175);
     padding: 10px;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 700!important;
     box-shadow: 0 0 30px rgba(0, -0, 0, -0.568);
     transition: 0.5s ease-in;
+    border: #252440 3px solid;
 }
 
 .empezar:hover{
     color:rgb(0, 4, 255);
 }
+
