@@ -9,7 +9,7 @@ class imagen{
     img = ["../abcdario/A.jpg","../abcdario/B.jpg","../abcdario/C.jpg",
     "../abcdario/D.jpg", "../abcdario/E.jpg","../abcdario/F.jpg","../abcdario/G.jpg","../abcdario/H.jpg",
     "../abcdario/I.jpg","../abcdario/J.jpg", "../abcdario/K.jpg", "../abcdario/L.jpg", 
-    "../abcdario/M.jpg", "../abcdario/N.jpg","../abcdario/Ñ.jpg", "../abcdario/O.jpg", "../abcdario/P.jpg", 
+    "../abcdario/M.jpg", "../abcdario/N.jpg","../abcdario/ene.jpg", "../abcdario/O.jpg", "../abcdario/P.jpg", 
     "../abcdario/Q.jpg", "../abcdario/R.jpg", "../abcdario/S.jpg", "../abcdario/T.jpg",
     "../abcdario/U.jpg", "../abcdario/V.jpg", "../abcdario/W.jpg","../abcdario/X.jpg", 
     "../abcdario/Y.jpg", "../abcdario/Z.jpg"];
@@ -58,7 +58,7 @@ class imagen{
             case "N":
                 this.refImagen = this.img[13];
                 break;
-            case "Ñ":
+            case "ene":
                 this.refImagen = this.img[14];
                 break;
             case "O":
