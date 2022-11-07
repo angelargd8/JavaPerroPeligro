@@ -5,7 +5,7 @@
 
 <!-- Main -->
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <!-- Bootstrap CSS -->
@@ -26,6 +26,13 @@
                     <div class="form-group text-center pt-4">
                         <h1 class="text-light" font="Helvetica"> Comunicación para todos  🤟🏻</h1><br>
                     </div>  
+                    <div class="form-group mx-sm-4 pt-2">
+                        <input type="text" requiered name="usuario" class="form-control" placeholder="Ingrese su usuario"><br>
+                    </div>
+                    
+                    <!--<div class="form-group mx-sm-4 pb-3">
+                        <input type="password" requiered name="contrasena" class="form-control" placeholder="Ingrese su contraseña"><br>
+                    </div> --> 
                     <div class="form-group mx-sm-5 pb-3">
                         <input type="submit" class="btn btn-block empezar" value="ㅤㅤㅤEmpezarㅤㅤㅤ"><br>
                     </div>
@@ -34,7 +41,36 @@
         </div>
     </div>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script>
+        function reverseMatrix(matrix){
+        let output = [];
+        // Por cada fila
+        matrix.forEach((values, row) => {
+            // Vemos los valores y su posicion
+            values.forEach((value, col) => {
+            // Si la posición aún no fue creada
+            if (output[col] === undefined) output[col] = [];
+            output[col][row] = value;
+            });
+        });
+        return output;
+        }
+
+        function readFile(evt) {
+        let file = evt.target.files[0];
+        let reader = new FileReader();
+        reader.onload = (e) => {
+            // Cuando el archivo se terminó de cargar
+            let lines = parseCSV(e.target.result);
+            let output = reverseMatrix(lines);
+            console.log(output);
+        };
+        // Leemos el contenido del archivo seleccionado
+        reader.readAsBinaryString(file);
+        }
+
+        readFile("../PerroPeligro/vista/datos.txt");
+    </script>
 </body>
 </html>
