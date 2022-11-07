@@ -20,7 +20,7 @@ if ($resultado = mysqli_fetch_array($consulta))
         alert('Bienvenido de vuelta a comunicación para todos!');
         </script>";
 
-    include("../vista/menu_principal.html");      
+    include("menu_principal.html");      
 
 }
 else
@@ -29,7 +29,7 @@ else
     echo "<script> 
         alert('Atención, ingrese bien los datos!');
         </script>";
-        include("../vista/index.html");
+        include("index.html");
 }
 
 
