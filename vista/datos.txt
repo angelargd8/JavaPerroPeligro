@@ -1,1 +1,2 @@
-hola
+Obstaculo = "2";
+DistanciaObs="18";

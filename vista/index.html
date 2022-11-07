@@ -7,6 +7,8 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        
         <meta charset="utf-8">
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -21,7 +23,8 @@
         <br><br>
         <div class="row justify-content-center pt-5 mt-5 mr-1">
             <div class="col-md-7 formulario">
-                <form action="menu_principal.html" method="POST">
+                <!--<form action="login.php" method="POST"></form>-->
+                <form action="login.php" method="POST">
                     
                     <div class="form-group text-center pt-4">
                         <h1 class="text-light" font="Helvetica"> Comunicación para todos  🤟🏻</h1><br>
@@ -29,10 +32,9 @@
                     <div class="form-group mx-sm-4 pt-2">
                         <input type="text" requiered name="usuario" class="form-control" placeholder="Ingrese su usuario"><br>
                     </div>
-                    
-                    <!--<div class="form-group mx-sm-4 pb-3">
-                        <input type="password" requiered name="contrasena" class="form-control" placeholder="Ingrese su contraseña"><br>
-                    </div> --> 
+                    <div class="form-group mx-sm-4 pb-3">
+                        <input type="text" requiered name="correo" class="form-control" placeholder="Ingrese su correo electronico"><br>
+                    </div>  
                     <div class="form-group mx-sm-5 pb-3">
                         <input type="submit" class="btn btn-block empezar" value="ㅤㅤㅤEmpezarㅤㅤㅤ"><br>
                     </div>
@@ -41,9 +43,10 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    
+
     <script>
-        function reverseMatrix(matrix){
+        /*function reverseMatrix(matrix){
         let output = [];
         // Por cada fila
         matrix.forEach((values, row) => {
@@ -70,7 +73,48 @@
         reader.readAsBinaryString(file);
         }
 
-        readFile("../PerroPeligro/vista/datos.txt");
+        readFile("../PerroPeligro/vista/datos.txt");*/
+        /*var arrayDatos= new Array();
+        var archivoTxt= new XMLHttpRequest();
+        var fileRuta="datos.txt";
+        archivoTxt.open("GET",fileRuta,false);
+        archivoTxt.send('hola');
+        var txt = archivoTxt.responseText;
+        for (var i=0; i<txt.length;i++){
+            arrayDatos.push(txt[i]);
+        }
+        arrayDatos.forEach(function(data){
+            console.log(data);
+        });*/
+        /*setInterval(function(){
+            $("#div").load("carga.html");
+            cargarDatos();
+
+        },16);
+        function cargarDatos(){
+            console.log("xd");
+            //document.getElementById("Obstaculo");
+            //var Obstaculo;
+            document.getElementById("campo1").innerText=Obstaculo;
+            //document.getElementById("campo2").innerText=DistanciaObs;
+
+        }*/
+        /*const fs= require('prueba.js');
+        fs.readFile('datos.txt','utf8',(err, data) =>{
+            if(err){
+                console.error(err);
+                return;
+            }
+            console.log(data);
+        });*/
     </script>
+    <!--<table>
+        <tr>
+            <td id="campo1"></td>
+        </tr>
+        <tr>
+            <td id="campo2"></td>
+        </tr>
+    </table>-->
 </body>
 </html>
