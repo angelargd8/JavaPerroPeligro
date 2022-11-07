@@ -7,7 +7,7 @@ $correo= $_POST['correo'];
 $_SESSION['id']="";
 //$_SESSION['rol']="";
 
-include("conexion.php");
+include("../modelo/conexion.php");
 global $cnx;
 
 $consulta= mysqli_query($cnx, "SELECT * FROM usuarios WHERE nombre='$nombre' AND correo= '$correo'");
@@ -20,7 +20,7 @@ if ($resultado = mysqli_fetch_array($consulta))
         alert('Bienvenido de vuelta a comunicación para todos!');
         </script>";
 
-    include("menu_principal.html");      
+    include("../vista/menu_principal.html");      
 
 }
 else
@@ -29,7 +29,7 @@ else
     echo "<script> 
         alert('Atención, ingrese bien los datos!');
         </script>";
-        include("index.html");
+        include("../vista/index.html");
 }
 
 
