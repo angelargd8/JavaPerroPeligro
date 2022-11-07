@@ -17,7 +17,7 @@ if ($resultado = mysqli_fetch_array($consulta))
     //$_SESSION['usuario']= $usuario;
          
     echo "<script> 
-        alert('Bienvenido de vuelta!');
+        alert('Bienvenido de vuelta a comunicación para todos!');
         </script>";
 
     include("menu_principal.html");      
