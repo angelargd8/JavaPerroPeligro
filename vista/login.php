@@ -8,6 +8,8 @@ $_SESSION['id']="";
 //$_SESSION['rol']="";
 
 include("conexion.php");
+//include("..//modelo//conexion.php");
+
 global $cnx;
 
 $consulta= mysqli_query($cnx, "SELECT * FROM usuarios WHERE nombre='$nombre' AND correo= '$correo'");
