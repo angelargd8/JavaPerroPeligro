@@ -14,13 +14,13 @@ class imagen{
     constructor(){
         
     }
-    img = ["../ImagenesVideos/abcdario/A.jpg","../ImagenesVideos/abcdario/B.jpg","../ImagenesVideos/abcdario/C.jpg",
-    "../ImagenesVideos/abcdario/D.jpg", "../ImagenesVideos/abcdario/E.jpg","../ImagenesVideos/abcdario/F.jpg","../ImagenesVideos/abcdario/G.jpg","../ImagenesVideos/abcdario/H.jpg",
-    "../ImagenesVideos/abcdario/I.jpg","../ImagenesVideos/abcdario/J.jpg", "../ImagenesVideos/abcdario/K.jpg", "../ImagenesVideos/abcdario/L.jpg", 
-    "../ImagenesVideos/abcdario/M.jpg", "../ImagenesVideos/abcdario/N.jpg","../ImagenesVideos/abcdario/ene.jpg", "../ImagenesVideos/abcdario/O.jpg", "../ImagenesVideos/abcdario/P.jpg", 
-    "../ImagenesVideos/abcdario/Q.jpg", "../ImagenesVideos/abcdario/R.jpg", "../ImagenesVideos/abcdario/S.jpg", "../ImagenesVideos/abcdario/T.jpg",
-    "../ImagenesVideos/abcdario/U.jpg", "../ImagenesVideos/abcdario/V.jpg", "../ImagenesVideos/abcdario/W.jpg","../ImagenesVideos/abcdario/X.jpg", 
-    "../ImagenesVideos/abcdario/Y.jpg", "../ImagenesVideos/abcdario/Z.jpg"];
+    img = ["../abcdario/A.jpg","../abcdario/B.jpg","../abcdario/C.jpg",
+    "../abcdario/D.jpg", "../abcdario/E.jpg","../abcdario/F.jpg","../abcdario/G.jpg","../abcdario/H.jpg",
+    "../abcdario/I.jpg","../abcdario/J.jpg", "../abcdario/K.jpg", "../abcdario/L.jpg", 
+    "../abcdario/M.jpg", "../abcdario/N.jpg","../abcdario/ene.jpg", "../abcdario/O.jpg", "../abcdario/P.jpg", 
+    "../abcdario/Q.jpg", "../abcdario/R.jpg", "../abcdario/S.jpg", "../abcdario/T.jpg",
+    "../abcdario/U.jpg", "../abcdario/V.jpg", "../abcdario/W.jpg","../abcdario/X.jpg", 
+    "../abcdario/Y.jpg", "../abcdario/Z.jpg"];
 
     linkLetra(letra){
         switch (letra) {
@@ -116,10 +116,10 @@ class imagen{
 }
 
 var img = new imagen();
-//alert(img.linkLetra("A"))
+alert(img.linkLetra("A"))
 
 function hrefImagen(letra){
-    //alert(letra);
+    alert(letra);
     return img.linkLetra(letra);
     
 }
