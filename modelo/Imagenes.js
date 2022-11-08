@@ -116,7 +116,10 @@ class imagen{
 }
 
 var img = new imagen();
-//const ima=document.getElementById("ima");
+alert(img.linkLetra("A"))
+
 function hrefImagen(letra){
+    alert(letra);
     return img.linkLetra(letra);
+    
 }

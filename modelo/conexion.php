@@ -15,6 +15,6 @@ if (!$cnx)
 {
 	die ("no se logro la conexion");
 }
-echo "conexion exitosa";
+//echo "conexion exitosa";
 
 ?>

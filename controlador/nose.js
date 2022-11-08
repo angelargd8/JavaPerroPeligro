@@ -11,6 +11,7 @@ function getUrlVars() {
 
 
 function getLetra(){
+    console.log(getUrlVars()["valor"]);
     return  getUrlVars()["valor"];
 }
 
