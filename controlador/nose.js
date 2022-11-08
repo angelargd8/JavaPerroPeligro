@@ -11,12 +11,12 @@ function getUrlVars() {
 
 
 function getLetra(){
-    console.log(getUrlVars()["valor"]);
+    //console.log(getUrlVars()["valor"]);
     return  getUrlVars()["valor"];
 }
 
 var im = document.getElementById("im");
-console.log(im);
+//console.log(im);
 im.setAttribute("src",hrefImagen(getLetra()));
 
 //('<img src="'+hrefImagen(getLetra())+'" height="700" width="400">');
