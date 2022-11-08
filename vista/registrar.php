@@ -29,7 +29,7 @@ else
     echo "<script> 
         alert('Error');
         </script>";
-        include("index.html");
+        //include("index.html");
 }
 
 
