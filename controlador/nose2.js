@@ -10,13 +10,13 @@ function getUrlVars() {
 }
 
 
-function getLetra(){
-    //console.log(getUrlVars()["valor"]);
+function getVideo(){
+    console.log(getUrlVars()["valor"]);
     return  getUrlVars()["valor"];
 }
 
-var im = document.getElementById("im");
+var vid = document.getElementById("vid");
 //console.log(im);
-im.setAttribute("src",hrefImagen(getLetra()));
+vid.setAttribute("src",hrefVideo(getVideo()));
 
 //('<img src="'+hrefImagen(getLetra())+'" height="700" width="400">');

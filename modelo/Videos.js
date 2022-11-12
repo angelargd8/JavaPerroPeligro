@@ -30,19 +30,19 @@ class video{
             case "Bienvenido":
                 this.refVideo = this.vd[2];
                 break;
-            case "Buenas Noches":
+            case "BuenasNoches":
                 this.refVideo = this.vd[3];
                 break;
-            case "Buenas Tardes":
+            case "BuenasTardes":
                 this.refVideo = this.vd[4];
                 break;
-            case "Como estas":
+            case "Comoestas":
                 this.refVideo = this.vd[5];
                 break;
-            case "Cual es tu nombre":
+            case "CualEsTuNombre":
                 this.refVideo = this.vd[6];
                 break;
-            case "Donde Vives":
+            case "DondeVives":
                 this.refVideo = this.vd[7];
                 break;
             case "Gracias":
@@ -54,7 +54,7 @@ class video{
             case "Hola":
                 this.refVideo = this.vd[10];
                 break;
-            case "Mi Nombre Es":
+            case "MiNombreEs":
                 this.refVideo = this.vd[11];
                 break;
             case "Nombre":
@@ -71,10 +71,9 @@ class video{
 }
 
 var vd = new video();
-alert(vd.linkVideo("Adios"))
 
 function hrefVideo(frase){
-    alert(frase);
+    //alert(frase);
     return vd.linkVideo(frase);
     
 }

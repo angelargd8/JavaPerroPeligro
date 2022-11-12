@@ -116,10 +116,10 @@ class imagen{
 }
 
 var img = new imagen();
-alert(img.linkLetra("A"))
+//alert(img.linkLetra("A"))
 
 function hrefImagen(letra){
-    alert(letra);
+    //alert(letra);
     return img.linkLetra(letra);
     
 }
