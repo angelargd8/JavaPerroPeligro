@@ -22,7 +22,7 @@ class NuevaVentana{
         //alert("perro peligro")
     }
     saludos() {
-        window.location.href = "../vista/saludos.html";
+        window.location.href = "../vista/calendario.html";
     }
     frases_comunes() {
         window.location.href = "../vista/frases_comunes.html";
