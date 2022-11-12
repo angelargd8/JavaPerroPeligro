@@ -15,8 +15,11 @@ class video{
         
     }
     vd = ["../frasescomunes/adios.mp4","../frasescomunes/apodo.mp4","../frasescomunes/bienvenido.mp4",
-    "../frasescomunes/buenasnoches.mp4", "../frasescomunes/buenastardes.mp4","../frasescomunes/comoestas.mp4","../frasescomunes/cualestunombre.mp4","../frasescomunes/dondevives.mp4",
-    ,"../frasescomunes/gracias.mp4", "../frasescomunes/guatemala.mp4", "../frasescomunes/hola.mp4", 
+    "../frasescomunes/buenasnoches.mp4", "../frasescomunes/buenastardes.mp4",
+    "../frasescomunes/comoestas.mp4",
+    "../frasescomunes/cualestunombre.mp4","../frasescomunes/dondevives.mp4"
+    ,"../frasescomunes/gracias.mp4", "../frasescomunes/guatemala.mp4", 
+    "../frasescomunes/hola.mp4", 
     "../frasescomunes/minombrees.mp4", "../frasescomunes/nombre.mp4"];
 
     linkVideo(frase){
@@ -71,9 +74,7 @@ class video{
 }
 
 var vd = new video();
-
+console.log(hrefVideo("Gracias"), vd[8]);
 function hrefVideo(frase){
-    //alert(frase);
     return vd.linkVideo(frase);
-    
 }

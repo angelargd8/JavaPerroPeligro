@@ -16,7 +16,7 @@ function getVideo(){
 }
 
 var vid = document.getElementById("vid");
-//console.log(im);
+console.log(vid);
 vid.setAttribute("src",hrefVideo(getVideo()));
 
 //('<img src="'+hrefImagen(getLetra())+'" height="700" width="400">');
