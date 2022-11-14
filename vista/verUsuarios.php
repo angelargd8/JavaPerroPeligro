@@ -1,13 +1,13 @@
+<!DOCTYPE html>
+<head>
 <?php
 session_start(); 
 ob_start();
 include("../modelo/Principal.php");?>
-<!--
 
--->
-<!doctype html>
+
 <html lang="es">
-<head>
+
 
 <title>Busqueda de Usuarios</title>
 <script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
@@ -31,7 +31,8 @@ $(document).ready(function () {
       }(jQuery));
 });
 </script> 
-
+</head>
+<body>
 <!-- fin de la funcion de jquery-->
 <!-- Inicio de contenidos -->
 <div class="container">
@@ -65,7 +66,7 @@ $(document).ready(function () {
       <th>Tipo de usuario</th>
       </tr>
   </thead>
-    <body>
+   
     
   <tbody class="BusquedaRapida" bgcolor="#ade8f4">
 

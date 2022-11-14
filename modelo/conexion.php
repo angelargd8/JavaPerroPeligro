@@ -2,7 +2,7 @@
 //cadena para la conexion a la base de datos
 
 $usuario = "root";
-$clave="mpbY4VhJVA7E4HKS";
+$clave="";
 $servidor= "localhost";
 $base = "comunicacion";
 
