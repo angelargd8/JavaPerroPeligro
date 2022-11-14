@@ -19,8 +19,9 @@ if ($resultado = mysqli_fetch_array($consulta))
     echo "<script> 
         alert('Bienvenido de vuelta a comunicación para todos!');
         </script>";
-
-    include("../vista/menu_principal.html");      
+    $_SESSION["Nombre"] = $nombre;
+    $_SESSION["Tipo"] = $resultado["Tipo_usuario"];
+    include("../vista/menu_principal.php");      
 
 }
 else
