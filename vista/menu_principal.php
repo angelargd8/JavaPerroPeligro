@@ -57,7 +57,7 @@ include("../modelo/Principal.php");
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="saludos.html">Saludos</a>
+            <a class="nav-link" href="calendario.html">Calendario</a>
           </li>
           <?php if($obj->tipo() == "Administrador"):?>
             <li class="nav-item">
