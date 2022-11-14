@@ -97,11 +97,11 @@ include("../modelo/Principal.php");
                     </div>
                     
                 </form>
-                <form action="saludos.html" method="POST">
+                <form action="calendario.html" method="POST">
                     
                     
                     <div class="form-group mx-sm-5 pb-5">
-                        <input type="button" class="btn btn-block btn-lg empezar" value="   Saludos   " onclick="salu2()"><br>
+                        <input type="button" class="btn btn-block btn-lg empezar" value="   Calendario   " onclick="salu2()"><br>
                     </div>
                     
                 </form>
