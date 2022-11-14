@@ -71,21 +71,14 @@ include("../modelo/Principal.php");
             <td></td>
         </tr>
         <tr>
-            <td><video id="im" height="700" width="400" loop="true" autoplay="true" controls></td>
+            <td><video id="im" height="700" width="400" loop="false" autoplay="true" controls></td>
             <td><input type="text" id="Rimg1" name="Rimg1"></td>
+        </tr>
+        <tr>
+            <td><video id="vid2" height="700" width="400" loop="false" autoplay="true" controls></td>         
         </tr>
 
   </table>
-  
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <input type="text" id="Rimg1" name="Rimg1">
-  <canvas id="im2" height="700" width="400"></canvas>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img id="a" height="700" width="400"/>
-  <input type="text" id="Rimg2" name="Rimg2">
-  <?php 
-    
-  ?>
 </body>
 <script type="text/javascript" src="../modelo/Imagenes.js" ></script>
 <script type="text/javascript" src="../modelo/Videos.js" ></script>

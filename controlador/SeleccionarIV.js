@@ -9,8 +9,9 @@ let posVid2 = Math.floor(Math.random() * arrVid.length);
 
 var im = document.getElementById("im");
 im.setAttribute("src",hrefVideo(arrVid[posVid2]));
-var im2 = document.getElementById("im2");
-im2.setAttribute("src",hrefImagen(arrImg[posImg2]))
+//var im2 = document.getElementById("vid2");
+//console.log(im2)
+//im2.setAttribute("src",hrefVideo(arrVid[posVid1]));
 
 function getPosImg1(){
     return posImg1;
