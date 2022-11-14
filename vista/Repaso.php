@@ -72,12 +72,19 @@ include("../modelo/Principal.php");
         </tr>
         <tr>
             <td><video id="im" height="700" width="400" loop="false" autoplay="true" controls></td>
-            <td><input type="text" id="Rimg1" name="Rimg1"></td>
+            <td><input type="text" id="Rimg1" name="Rimg1" placeholder="Ingrese el significado"></td>
         </tr>
         <tr>
-            <td><video id="vid2" height="700" width="400" loop="false" autoplay="true" controls></td>         
+            <td><video id="vid2" height="700" width="400" loop="false" autoplay="true" controls></td> 
+            <td><input type="text" id="Rimg2" name="Rimg2" placeholder="Ingrese el significado"></td>        
         </tr>
-
+        <tr>
+            <td><video id="vid3" height="700" width="400" loop="false" autoplay="true" controls></td> 
+            <td><input type="text" id="Rimg3" name="Rimg3" placeholder="Ingrese el significado"></td>
+        </tr>
+        <tr>
+            <td><input id="clickMe" type="button" value="Revisar Respuestas" onclick="revisarRespuestas();" /></td>
+        </tr>
   </table>
 </body>
 <script type="text/javascript" src="../modelo/Imagenes.js" ></script>
