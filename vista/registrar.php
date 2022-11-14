@@ -10,7 +10,7 @@ $_SESSION['id']="";
 include("../modelo/conexion.php");
 global $cnx;
 
-$sql= "INSERT INTO `usuarios`(`nombre`, `correo`) VALUES ('$nombre','$correo')";
+$sql= "INSERT INTO `usuarios`(`nombre`, `correo`, `Tipo_usuario`) VALUES ('$nombre','$correo', 'Normal')";
 
 if (mysqli_query($cnx, $sql))
 {
@@ -19,8 +19,11 @@ if (mysqli_query($cnx, $sql))
     echo "<script> 
         alert('Nuevo usuario creado!');
         </script>";
+    $_SESSION["Nombre"] = $nombre;
+    $_SESSION["Tipo"] = $resultado["Tipo_usuario"];
+    include("../vista/menu_principal.php");  
 
-    include("menu_principal.html");      
+       
 
 }
 else

@@ -36,7 +36,7 @@ include("../modelo/Principal.php");
 
           <!-- Inicio -->
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="../modelo/Principal.php">Menu principal</a>
+        <a class="nav-link active" aria-current="page" href="../vista/menu_principal.php">Menu principal</a>
       </li>
         <!-- -->
             <li class="nav-item">
