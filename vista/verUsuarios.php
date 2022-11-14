@@ -64,7 +64,6 @@ $(document).ready(function () {
       <th>Nombre</th>            
       <th>Correo</th>
       <th>Tipo de usuario</th>
-      <th>Puntos</th>
       </tr>
   </thead>
    
@@ -85,7 +84,7 @@ $(document).ready(function () {
 
           <!-- Inicio -->
       <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="menu_principal.php">Menu principal</a>
+        <a class="nav-link" aria-current="page" href="menu_principal.html">Menu principal</a>
       </li>
         <!-- -->
             <li class="nav-item">
@@ -109,7 +108,6 @@ $(document).ready(function () {
               <a class="nav-link" href="Repaso.php">Repaso</a>
             </li>
           <?php endif; ?>
-          
 
         </ul>
       
@@ -142,7 +140,7 @@ $(document).ready(function () {
         <td>".$misdatos["nombre"]."</td>
         <td>".$misdatos["correo"]."</td>
         <td>".$misdatos["Tipo_usuario"]."</td>
-        <td>".$misdatos["aciertos"]."</td>
+
         </tr>";
 
        }
