@@ -64,6 +64,11 @@ include("../modelo/Principal.php");
               <a class="nav-link" href="verUsuarios.php">Usuarios</a>
             </li>
           <?php endif; ?>
+          <?php if($obj->tipo() == "Normal"):?>
+            <li class="nav-item">
+              <a class="nav-link" href="Repaso.php">Repaso</a>
+            </li>
+          <?php endif; ?>
         </ul>
         </form>
       </div>
