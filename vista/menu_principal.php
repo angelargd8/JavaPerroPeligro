@@ -32,8 +32,56 @@ include("../modelo/Principal.php");
 <body><center>
 
 <!-- ----------------------------------------menu --------------------------------------------->
-<?php include "../modelo/encabezado.php"?>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #252440;">
+    <div class="container">
+        
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>     
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
+          <!-- Inicio -->
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="menu_principal.php">Menu principal</a>
+      </li>
+        <!-- -->
+            <li class="nav-item">
+                <a class="nav-link " href="abecedario.php">Abecedario</a>
+            </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="frases_comunes.php">Frases comunes</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="calendario.php">Calendario</a>
+          </li>
+          <?php 
+          
+          if($obj->tipo() == "Administrador"):?>
+            <li class="nav-item">
+              <a class="nav-link " href="verUsuarios.php">Usuarios</a>
+            </li>
+          <?php endif; ?>
+          <?php if($obj->tipo() == "Normal"):?>
+            <li class="nav-item">
+              <a class="nav-link " href="Repaso.php?valor=0&cambio=no">Repaso</a>
+            </li>
+          <?php endif; ?>
+          <li class="nav-item">
+            <a class="nav-link " href="index.php"> Cerrar Sesión</a>
+          </li>
+
+        </ul>
+      
+          
+
+        </form>
+      </div>
+    </div>
+  </nav>
 	<font >
     <div class="container">
         <br><br><br><br><br><br>
@@ -44,7 +92,7 @@ include("../modelo/Principal.php");
                     
      
                     <div class="form-group mx-sm-5 pb-5">
-                        <input type="button"  class="btn btn-block btn-lg empezar" value="Abecedario" onclick="abc()"><br>
+                        <input type="sumbit"  class="btn btn-block btn-lg empezar" value="Abecedario" onclick="abc()"><br>
                     </div>
                     
                 </form>

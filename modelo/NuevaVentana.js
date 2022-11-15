@@ -18,7 +18,9 @@ class NuevaVentana{
     }
     abecedario() {
         /*document.write("aa");*/
+        
         window.location.href = "../vista/abecedario.php";
+        
         //alert("perro peligro")
     }
     saludos() {

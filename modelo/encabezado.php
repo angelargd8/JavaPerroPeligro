@@ -24,16 +24,7 @@
           <li class="nav-item">
             <a class="nav-link" href="calendario.php">Calendario</a>
           </li>
-          <?php if($obj->tipo() == "Administrador"):?>
-            <li class="nav-item">
-              <a class="nav-link active" href="verUsuarios.php">Usuarios</a>
-            </li>
-          <?php endif; ?>
-          <?php if($obj->tipo() == "Normal"):?>
-            <li class="nav-item">
-              <a class="nav-link active" href="Repaso.php?valor=0&cambio=no">Repaso</a>
-            </li>
-          <?php endif; ?>
+          
           <li class="nav-item">
             <a class="nav-link " href="index.php"> Cerrar Sesión</a>
           </li>
