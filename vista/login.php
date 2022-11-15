@@ -19,8 +19,10 @@ if ($resultado = mysqli_fetch_array($consulta))
     echo "<script> 
         alert('Bienvenido de vuelta a comunicación para todos!');
         </script>";
+    $_SESSION["id"] = $resultado["id"];
     $_SESSION["Nombre"] = $nombre;
     $_SESSION["Tipo"] = $resultado["Tipo_usuario"];
+    $_SESSION["Puntos"] = $resultado["aciertos"];
     include("../vista/menu_principal.php");      
 
 }

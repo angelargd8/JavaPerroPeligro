@@ -19,8 +19,11 @@ if (mysqli_query($cnx, $sql))
     echo "<script> 
         alert('Nuevo usuario creado!');
         </script>";
-
-    include("menu_principal.html");      
+    $_SESSION["id"] = $resultado["id"];
+    $_SESSION["Nombre"] = $nombre;
+    $_SESSION["Tipo"] = $resultado["Tipo_usuario"];
+    $_SESSION["Puntos"] = $resultado["aciertos"];
+    include("menu_principal.php");      
 
 }
 else

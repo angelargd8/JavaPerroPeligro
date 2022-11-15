@@ -26,22 +26,28 @@ class UsuariosBD{
 
 class Administrador extends UsuariosBD{
 
-    public function __construct($nom, $tipo){
+    protected $puntaje;
+
+    public function __construct($nom, $tipo,$puntaje){
+        $this->puntaje = $puntaje;
         parent::__construct($nom, $tipo);
     }
     
-    public function vista(){
-        echo "Hola $this->name soy $this->tipo";
+    public function mPuntaje(){
+        return "Puntaje Anterior: $this->puntaje";
     }
 }
 
 class Humilde extends UsuariosBD{
-    public function __construct($nom, $tipo){
+    protected $puntaje;
+
+    public function __construct($nom, $tipo,$puntaje){
+        $this->puntaje = $puntaje;
         parent::__construct($nom, $tipo);
     }
 
-    public function vista(){
-        echo "Hola $this->name soy $this->tipo";
+    public function mPuntaje(){
+        return "Puntaje Anterior: $this->puntaje";
     }
 }
 ?>

@@ -2,6 +2,13 @@
 <?php
 session_start(); 
 include("../modelo/Principal.php");
+include("../controlador/ModificarPuntaje.php");
+
+$valorN = $_GET["valor"];
+$cambio = $_GET["cambio"];
+if($cambio){
+    modificar($_SESSION["id"],$valorN);
+}
 ?>
 <html>
 <head>
@@ -20,15 +27,22 @@ include("../modelo/Principal.php");
 
     </head>
 
-<body><center>
+<body>
 
 <!-- ----------------------------------------menu --------------------------------------------->
     
 <?php include "../modelo/encabezado.html"?>
-
-  <table>
+<br><br><br>
+  <table align="center">
         <tr>
-            <td></td>
+            
+            <td><center><a><h1 style="color: White;">Repaso de frases</h1></a><center></td>
+            
+        </tr>
+        <tr>
+            
+            <td><center><a><h1 style="color: White;"><?= $obj->puntos(); ?></h1></a><center></td>
+            
         </tr>
         <tr>
             <td><video id="im" height="700" width="400" loop="false" autoplay="true" controls></td>
@@ -43,9 +57,14 @@ include("../modelo/Principal.php");
             <td><input type="text" id="Rimg3" name="Rimg3" placeholder="Ingrese el significado"></td>
         </tr>
         <tr>
-            <td><input id="clickMe" type="button" value="Revisar Respuestas" onclick="revisarRespuestas();" /></td>
+            <td><video id="vid4" height="700" width="400" loop="false" autoplay="true" controls></td> 
+            <td><input type="text" id="Rimg4" name="Rimg4" placeholder="Ingrese el significado"></td>
+        </tr>
+        <tr>
+            <td><center><input id="clickMe" type="button" value="Revisar Respuestas" onclick="revisarRespuestas();" /></center></td>
         </tr>
   </table>
+  <br><br><br>
 </body>
 <script type="text/javascript" src="../modelo/Imagenes.js" ></script>
 <script type="text/javascript" src="../modelo/Videos.js" ></script>

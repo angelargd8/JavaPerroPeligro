@@ -11,10 +11,11 @@ class Principal{
     {
         $nom = $_SESSION["Nombre"];
         $tipo = $_SESSION["Tipo"];
+        $puntos = $_SESSION["Puntos"];
         if($tipo == "Administrador"){
-            $this->us = new Administrador($nom, $tipo);
+            $this->us = new Administrador($nom, $tipo,$puntos);
         }else{
-            $this->us = new Humilde($nom, $tipo);
+            $this->us = new Humilde($nom, $tipo,$puntos);
         }
         
     }
@@ -27,8 +28,9 @@ class Principal{
         return $this->us->getTipo();
     }
 
-    public function vista(){
-        $this->us->vista();
+    public function puntos(){
+        echo "<script>console.log('EntroAqui');</script>";
+        return $this->us->mPuntaje();
     }
     
 
