@@ -11,6 +11,10 @@ include("../modelo/conexion.php");
 global $cnx;
 
 $sql= "INSERT INTO `usuarios`(`nombre`, `correo`,`Tipo_usuario`) VALUES ('$nombre','$correo', 'Normal')";
+$consulta = "SELECT * FROM usuarios";
+$resultado = mysqli_fetch_array(mysqli_query($cnx , $consulta));
+
+     
 
 if (mysqli_query($cnx, $sql))
 {
@@ -30,7 +34,7 @@ else
 {
     
     echo "<script> 
-        alert('Error');
+        alert('Error, usuario ya existente');
         </script>";
         //include("index.html");
 }

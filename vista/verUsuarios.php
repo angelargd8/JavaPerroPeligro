@@ -114,6 +114,7 @@ $(document).ready(function () {
       <th>Nombre</th>            
       <th>Correo</th>
       <th>Tipo de usuario</th>
+      <th>Puntaje</th>
       </tr>
   </thead>
    
@@ -147,7 +148,7 @@ $(document).ready(function () {
         <td>".$misdatos["nombre"]."</td>
         <td>".$misdatos["correo"]."</td>
         <td>".$misdatos["Tipo_usuario"]."</td>
-
+        <td>".$misdatos["aciertos"]."</td>
         </tr>";
 
        }

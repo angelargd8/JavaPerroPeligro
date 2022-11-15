@@ -81,6 +81,12 @@ include("../modelo/Principal.php");
         </form>
       </div>
     </div>
+    <div class="container">
+    <a  class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-white text-decoration-none">
+        &nbsp;&nbsp;
+        <span class="fs-4"><?= $obj->us->Bienvenida()?></span>
+      </a>
+    </div>
   </nav>
 	<font >
     <div class="container">
