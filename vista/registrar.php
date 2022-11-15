@@ -10,7 +10,7 @@ $_SESSION['id']="";
 include("../modelo/conexion.php");
 global $cnx;
 
-$sql= "INSERT INTO `usuarios`(`nombre`, `correo`) VALUES ('$nombre','$correo')";
+$sql= "INSERT INTO `usuarios`(`nombre`, `correo`,`Tipo_usuario`) VALUES ('$nombre','$correo', 'Normal')";
 
 if (mysqli_query($cnx, $sql))
 {
