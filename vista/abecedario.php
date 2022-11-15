@@ -28,7 +28,7 @@
 
 <!-- ----------------------------------------menu --------------------------------------------->
     
-<?php include "../modelo/encabezado.html"?>
+<?php include "../modelo/encabezado.php"?>
 
 
 
@@ -129,12 +129,6 @@
 
                     </tr>
         </table>  
-  
-                    
-                
-                
-               
-                
                 
 
 </body>

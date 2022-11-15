@@ -32,7 +32,7 @@ else
     echo "<script> 
         alert('Atención, ingrese bien los datos!');
         </script>";
-        include("../vista/index.html");
+        include("../vista/index.php");
 }
 
 

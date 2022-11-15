@@ -34,7 +34,7 @@ if($cambio == "si"){
 
 <!-- ----------------------------------------menu --------------------------------------------->
     
-<?php include "../modelo/encabezado.html"?>
+<?php include "../modelo/encabezado.php"?>
 <br><br><br>
   <table align="center">
         <tr>

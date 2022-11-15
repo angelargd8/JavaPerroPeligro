@@ -32,7 +32,7 @@ include("../modelo/Principal.php");
 <body><center>
 
 <!-- ----------------------------------------menu --------------------------------------------->
-<?php include "../modelo/encabezado.html"?>
+<?php include "../modelo/encabezado.php"?>
 
 	<font >
     <div class="container">
@@ -40,7 +40,7 @@ include("../modelo/Principal.php");
         <h1 class="text-light" font="Arial">Bienvenido</h1>
         <div class="row justify-content-center pt-5 mt-5 mr-1">
             <div class="col-md-7 formulario">
-                <form action="abecedario.html" method="POST">
+                <form action="abecedario.php" method="POST">
                     
      
                     <div class="form-group mx-sm-5 pb-5">
@@ -48,7 +48,7 @@ include("../modelo/Principal.php");
                     </div>
                     
                 </form>
-                <form action="calendario.html" method="POST">
+                <form action="calendario.php" method="POST">
                     
                     
                     <div class="form-group mx-sm-5 pb-5">
@@ -56,7 +56,7 @@ include("../modelo/Principal.php");
                     </div>
                     
                 </form>
-                <form action="frases_comunes.html" method="POST">
+                <form action="frases_comunes.php" method="POST">
                      
                     <div class="form-group mx-sm-5 pb-5">
                         <input type="button" class="btn btn-block btn-lg empezar" value="    Frases    " onclick="frases()"><br>

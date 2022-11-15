@@ -18,14 +18,14 @@ class NuevaVentana{
     }
     abecedario() {
         /*document.write("aa");*/
-        window.location.href = "../vista/abecedario.html";
+        window.location.href = "../vista/abecedario.php";
         //alert("perro peligro")
     }
     saludos() {
-        window.location.href = "../vista/calendario.html";
+        window.location.href = "../vista/calendario.php";
     }
     frases_comunes() {
-        window.location.href = "../vista/frases_comunes.html";
+        window.location.href = "../vista/frases_comunes.php";
     }
 
 }

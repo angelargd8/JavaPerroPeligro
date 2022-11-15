@@ -21,7 +21,7 @@
 
 <!-- ----------------------------------------menu --------------------------------------------->
     
-<?php include "../modelo/encabezado.html"?>
+<?php include "../modelo/encabezado.php"?>
 
 	<font >
         <br><br><br><br><br>

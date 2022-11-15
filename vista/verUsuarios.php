@@ -33,7 +33,7 @@ $(document).ready(function () {
 </script>
 </head>
 <body>
-<?php include "../modelo/encabezado.html"?>
+<?php include "../modelo/encabezado.php"?>
 <!-- fin de la funcion de jquery-->
 <!-- Inicio de contenidos -->
 <div class="container">

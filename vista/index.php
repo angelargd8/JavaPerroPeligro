@@ -40,7 +40,7 @@
                 </form>
                    
              
-                <form action="registrar.html" method="POST">
+                <form action="registrar.php" method="POST">
                     <div class="form-group mx-sm-4 pb-2">
                         <input type="submit" class="btn btn-block empezar" value="ㅤRegistrarseㅤ"><br>
                     </div>

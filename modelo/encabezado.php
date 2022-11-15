@@ -10,19 +10,19 @@
 
           <!-- Inicio -->
       <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="menu_principal.html">Menu principal</a>
+        <a class="nav-link" aria-current="page" href="menu_principal.php">Menu principal</a>
       </li>
         <!-- -->
             <li class="nav-item">
-                <a class="nav-link " href="abecedario.html">Abecedario</a>
+                <a class="nav-link " href="abecedario.php">Abecedario</a>
             </li>
 
           <li class="nav-item">
-            <a class="nav-link " href="frases_comunes.html">Frases comunes</a>
+            <a class="nav-link " href="frases_comunes.php">Frases comunes</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="calendario.html">Calendario</a>
+            <a class="nav-link" href="calendario.php">Calendario</a>
           </li>
           <?php if($obj->tipo() == "Administrador"):?>
             <li class="nav-item">
@@ -35,7 +35,7 @@
             </li>
           <?php endif; ?>
           <li class="nav-item">
-            <a class="nav-link " href="index.html"> Cerrar Sesión</a>
+            <a class="nav-link " href="index.php"> Cerrar Sesión</a>
           </li>
 
         </ul>
