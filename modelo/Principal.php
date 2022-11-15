@@ -32,6 +32,10 @@ class Principal{
         echo "<script>console.log('EntroAqui');</script>";
         return $this->us->mPuntaje();
     }
+
+    public function cambiarPuntos($pun){
+        $this->us->setPuntaje($pun);
+    }
     
 
 }

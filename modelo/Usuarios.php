@@ -36,6 +36,10 @@ class Administrador extends UsuariosBD{
     public function mPuntaje(){
         return "Puntaje Anterior: $this->puntaje";
     }
+
+    public function setPuntaje($pun){
+        $this->puntaje = $pun;
+    }
 }
 
 class Humilde extends UsuariosBD{
@@ -48,6 +52,10 @@ class Humilde extends UsuariosBD{
 
     public function mPuntaje(){
         return "Puntaje Anterior: $this->puntaje";
+    }
+
+    public function setPuntaje($pun){
+        $this->puntaje = $pun;
     }
 }
 ?>

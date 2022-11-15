@@ -6,8 +6,11 @@ include("../controlador/ModificarPuntaje.php");
 
 $valorN = $_GET["valor"];
 $cambio = $_GET["cambio"];
-if($cambio){
+if($cambio == "si"){
+    echo "<script>alert('Su puntaje fue de $valorN')</script>";
     modificar($_SESSION["id"],$valorN);
+    $_SESSION["Puntos"] = $valorN;
+    $obj->cambiarPuntos($valorN);
 }
 ?>
 <html>

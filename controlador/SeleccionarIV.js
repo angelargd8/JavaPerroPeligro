@@ -74,5 +74,5 @@ function revisarRespuestas(){
         console.log("Buena4");
         varlor +=10;
     }
-    window.location.replace("../vista/Repaso.php?valor="+varlor+"&cambio=true")
+    window.location.replace("../vista/Repaso.php?valor="+varlor+"&cambio=si")
 }
