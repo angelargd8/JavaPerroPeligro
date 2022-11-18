@@ -98,7 +98,7 @@ include("../modelo/Principal.php");
                     
      
                     <div class="form-group mx-sm-5 pb-5">
-                        <input type="sumbit"  class="btn btn-block btn-lg empezar" value="Abecedario" onclick="abc()"><br>
+                        <input type="sumbit"  class="btn btn-block btn-lg empezar" value="Abecedario" onclick="window.location.replace('abecedario.php')"><br>
                     </div>
                     
                 </form>
@@ -106,14 +106,14 @@ include("../modelo/Principal.php");
                     
                     
                     <div class="form-group mx-sm-5 pb-5">
-                        <input type="button" class="btn btn-block btn-lg empezar" value="   Calendario   " onclick="salu2()"><br>
+                        <input type="button" class="btn btn-block btn-lg empezar" value="   Calendario   " onclick="window.location.replace('calendario.php')"><br>
                     </div>
                     
                 </form>
                 <form action="frases_comunes.php" method="POST">
                      
                     <div class="form-group mx-sm-5 pb-5">
-                        <input type="button" class="btn btn-block btn-lg empezar" value="    Frases    " onclick="frases()"><br>
+                        <input type="button" class="btn btn-block btn-lg empezar" value="    Frases    " onclick="window.location.replace('frases_comunes.php')"><br>
                     </div>
                     
                 </form>
