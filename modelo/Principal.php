@@ -40,4 +40,10 @@ class Principal{
 
 }
 $obj = new Principal();
+
+inicio();
+
+function inicio(){
+    $obj = new Principal();
+}
 ?>

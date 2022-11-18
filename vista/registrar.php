@@ -25,7 +25,7 @@ if (mysqli_query($cnx, $sql))
         </script>";
     $_SESSION["id"] = $resultado["id"];
     $_SESSION["Nombre"] = $nombre;
-    $_SESSION["Tipo"] = $resultado["Tipo_usuario"];
+    $_SESSION["Tipo"] = "Normal";
     $_SESSION["Puntos"] = $resultado["aciertos"];
     include("menu_principal.php");      
 
